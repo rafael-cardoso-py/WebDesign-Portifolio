@@ -1,0 +1,192 @@
+/* ==========================================
+   ARQUIVO: estilo.css
+   Descrição: Estilos consolidados do guia web
+   ========================================== */
+
+/* Definição da Paleta de Cores via Variáveis CSS */
+:root {
+    --cor-principal: #2563EB;     /* Azul Profissional */
+    --cor-secundaria: #F8FAFC;    /* Cinza Claro de Fundo */
+    --cor-destaque: #F59E0B;      /* Âmbar / Laranja de Destaque */
+    --cor-texto: #1E293B;         /* Texto Escuro Padrão */
+    --cor-borda: #E2E8F0;         /* Cinza suave para bordas */
+}
+
+/* Reset Global e Aplicação de Estilos em Elementos HTML */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* Layout e Containers */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Aplicação de Estilos em Cards e Elementos HTML */
+.card {
+    background: white;
+    margin-top: 25px;
+    padding: 30px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 12px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: var(--cor-principal);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-left: 4px solid var(--cor-destaque);
+    padding-left: 10px;
+}
+
+p, ul {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Grid da Paleta de Cores */
+.palette-grid {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.color-box {
+    flex: 1;
+    min-width: 150px;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.color-box.primary { background-color: var(--cor-principal); }
+.color-box.secondary { background-color: #64748B; } 
+.color-box.accent { background-color: var(--cor-destaque); color: #1E293B; }
+
+.color-box span {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+/* Demonstração Visual do Box Model */
+.box-model-demo {
+    background-color: #DBEAFE;
+    border: 2px dashed var(--cor-principal);
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    color: #1E40AF;
+    border-radius: 6px;
+}
+
+.box-padding {
+    background-color: #93C5FD;
+    border: 2px dotted #1D4ED8;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.box-border {
+    background-color: #60A5FA;
+    border: 2px solid #1E3A8A;
+    padding: 15px;
+    border-radius: 4px;
+    color: white;
+}
+
+.box-margin {
+    background-color: #3B82F6;
+    border: 2px dashed white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.explanation-box {
+    background-color: var(--cor-secundaria);
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 3px solid var(--cor-principal);
+    font-size: 0.95rem;
+}
+
+/* Botão com Efeito Interativo (Hover) */
+.text-center {
+    text-align: center;
+}
+
+.btn-interactive {
+    background-color: var(--cor-principal);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    /* Transição suave para propriedades visuais */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+}
+
+/* Estado Interativo (Hover e Active) */
+.btn-interactive:hover {
+    background-color: #1D4ED8; /* Tom mais escuro */
+    transform: translateY(-2px); /* Efeito de levitação */
+    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-interactive:active {
+    transform: translateY(0); /* Efeito de clique */
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1E293B;
+    color: #94A3B8;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
