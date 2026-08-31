@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Prático: Estilização Web & CSS</title>
+    <!-- Carregamento do CSS Principal -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Carregamento do CSS Responsivo (deve vir por último para sobrescrever regras se necessário) -->
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Dominando a Estilização Web</h1>
+            <p>Conceitos fundamentais de design visual, CSS e interatividade</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- Seção 1: Paleta de Cores e Ferramentas -->
+        <section class="card">
+            <h2>1. Paleta de Cores e Ferramentas</h2>
+            <p>A definição harmônica de cores é o primeiro passo para criar interfaces profissionais. O projeto atual utiliza a seguinte paleta:</p>
+            
+            <div class="palette-grid">
+                <div class="color-box primary">
+                    <strong>Principal</strong>
+                    <span>#2563EB (Azul)</span>
+                </div>
+                <div class="color-box secondary">
+                    <strong>Secundária</strong>
+                    <span>#64748B (Cinza)</span>
+                </div>
+                <div class="color-box accent">
+                    <strong>Destaque</strong>
+                    <span>#F59E0B (Âmbar)</span>
+                </div>
+            </div>
+
+            <p style="margin-top: 20px;">Para gerar paletas eficientes, recomendamos ferramentas populares como:</p>
+            <ul>
+                <li><strong>Coolors.co:</strong> Gerador rápido e aleatório de esquemas de cores.</li>
+                <li><strong>Adobe Color:</strong> Roda de cores profissional baseada em teoria das cores.</li>
+                <li><strong>Paletton:</strong> Excelente para simular paletas em interfaces reais.</li>
+            </ul>
+        </section>
+
+        <!-- Seção 2: Exploração do Box Model -->
+        <section class="card">
+            <h2>2. Exploração do Box Model (Modelo de Caixa)</h2>
+            <p>Todo elemento no HTML é considerado uma caixa retangular composta por camadas visuais:</p>
+            
+            <div class="box-model-demo">
+                Conteúdo (Content)
+                <div class="box-padding">
+                    Padding (Espaçamento Interno)
+                    <div class="box-border">
+                        Border (Borda)
+                        <div class="box-margin">
+                            Margin (Espaçamento Externo)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="explanation-box">
+                <p><strong>Como funciona:</strong> O <em>Content</em> abriga a informação real. O <em>Padding</em> afasta o conteúdo das bordas. A <em>Border</em> delimita o perímetro e a <em>Margin</em> afasta o elemento de outros vizinhos na página.</p>
+            </div>
+        </section>
+
+        <!-- Seção 3: Botão Interativo com Hover -->
+        <section class="card text-center">
+            <h2>3. Criação de Botão com Efeito Interativo (Hover)</h2>
+            <p>Adicione dinamismo à interface utilizando transições suaves no estado de foco e passagem do mouse.</p>
+            <br>
+            <button class="btn-interactive">Explorar Recursos</button>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 - Guia de Fundamentos CSS. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

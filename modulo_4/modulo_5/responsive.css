@@ -1,0 +1,48 @@
+/* ==========================================
+   ARQUIVO: responsive.css
+   Descrição: Regras de Responsividade para Dispositivos Móveis
+   ========================================== */
+
+/* Ajustes para telas com largura máxima de 768px (Tablets e Celulares) */
+@media screen and (max-width: 768px) {
+    
+    /* Reduz o tamanho do título principal no topo */
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    /* Reduz o espaçamento interno dos cards para otimizar espaço */
+    .card {
+        padding: 20px 15px;
+        margin-top: 15px;
+    }
+
+    /* Transforma a grade de cores em blocos empilhados verticalmente */
+    .palette-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .color-box {
+        min-width: 100%;
+    }
+
+    /* Ajuste no Box Model visual para caber em telas estreitas */
+    .box-model-demo, 
+    .box-padding, 
+    .box-border, 
+    .box-margin {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    /* Faz com que o botão interativo ocupe toda a largura disponível no celular */
+    .btn-interactive {
+        width: 100%;
+        padding: 12px;
+    }
+}
