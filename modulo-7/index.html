@@ -1,0 +1,140 @@
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <style>
+    :root {
+      --primary-color: #4a90e2;
+      --bg-color: #f5f7fa;
+      --card-bg: #ffffff;
+      --text-color: #333333;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: var(--card-bg);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 10px 14px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    input[type="text"]:focus {
+      border-color: var(--primary-color);
+    }
+
+    button#addTaskBtn {
+      padding: 10px 16px;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    button#addTaskBtn:hover {
+      background-color: #357abd;
+    }
+
+    ul#taskList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul#taskList li {
+      background-color: #f9f9f9;
+      padding: 12px 14px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      border-left: 4px solid var(--primary-color);
+    }
+
+    ul#taskList li:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Estilo para tarefas marcadas como concluídas */
+    ul#taskList li.completed {
+      text-decoration: line-through;
+      color: #888;
+      background-color: #eef2f5;
+      border-left-color: #bdc3c7;
+    }
+
+    ul#taskList li button {
+      background: none;
+      border: none;
+      font-size: 1rem;
+      opacity: 0.6;
+      transition: opacity 0.2s;
+    }
+
+    ul#taskList li button:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+
+    <div class="input-group">
+      <!-- ID compatível com o script.js -->
+      <input type="text" id="taskInput" placeholder="Digite uma tarefa...">
+      <!-- ID compatível com o script.js -->
+      <button id="addTaskBtn">Adicionar</button>
+    </div>
+
+    <!-- ID compatível com o script.js -->
+    <ul id="taskList"></ul>
+  </div>
+
+  <!-- Vinculação do arquivo JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
