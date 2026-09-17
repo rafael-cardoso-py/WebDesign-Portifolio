@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escalação do Time</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <header class="app-header">
+      <h1>⚽ Escalador de Time</h1>
+      <p>Cadastre os jogadores para a partida</p>
+    </header>
+
+    <section class="input-section">
+      <div class="input-group">
+        <input 
+          type="text" 
+          id="taskInput" 
+          placeholder="Nome do jogador e posição (ex: Neymar - ATK)"
+          autocomplete="off"
+        >
+        <button id="addTaskBtn" type="button">Escalar</button>
+      </div>
+    </section>
+
+    <section class="list-section">
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
